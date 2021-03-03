@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WQA Philippines</title>
+        <title></title>
       </Head>
       <header className={styles.nav_container}>
         <MobileNavbar />
