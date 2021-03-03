@@ -1,3 +1,5 @@
+@import '_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Poppins:wght@100;200;300;500;700;900&display=swap');
 html,
 body,
 div,
@@ -121,4 +123,19 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html,
+body,
+main,
+#__next {
+  @extend %maxwh;
+}
+
+#__next {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

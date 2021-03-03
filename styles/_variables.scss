@@ -1,0 +1,20 @@
+$color-darkest: #3c58cb;
+$color-darker: #697fd8;
+$color-less-white: #4dd2ff;
+$color-white-sub: #d3985dd5;
+$color-white: #f8dbbe;
+
+%reset-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+%reset-position {
+  top: 0;
+  left: 0;
+}
+
+%maxwh {
+  height: 100%;
+  width: 100%;
+}
