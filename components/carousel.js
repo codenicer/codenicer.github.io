@@ -7,13 +7,24 @@ export default function Navbar({ children }) {
         <li
           id="carousel__slide1"
           className={styles.carousel__slide}
-          tabindex="0"
+          tabIndex="0"
         >
+          <div className={styles.carousel__hero_cont}>
+            <h3 className={styles.hero_cont__sub_headline}>
+              NOT CERTIFIED YET?
+            </h3>
+            <h1 className={styles.hero_cont__headline}>
+              We Provide Your Certificate
+            </h1>
+            <button className={styles.hero_cont__headline_cta}>
+              Get Certified
+            </button>
+          </div>
           <div className={styles.carousel__snapper}></div>
         </li>
         <li
           id="carousel__slide2"
-          tabindex="0"
+          tabIndex="0"
           className={styles.carousel__slide}
         >
           <div className={styles.carousel__snapper}></div>

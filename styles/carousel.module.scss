@@ -20,10 +20,10 @@
     left: 0;
   }
   95% {
-    left: -300%;
+    left: -100%;
   }
   98% {
-    left: -300%;
+    left: -100%;
   }
   99% {
     left: 0;
@@ -47,14 +47,17 @@
 
 .carousel_const {
   width: 100vw;
-  // height: 30vh;
+  height: 55vh;
   position: relative;
-  padding-top: 75%;
+  // padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
 
 .carousel__viewport {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
   position: absolute;
   top: 0;
   right: 0;
@@ -69,22 +72,44 @@
   .carousel__slide {
     position: relative;
     flex: 0 0 100%;
-    width: 100%;
-    background-color: #f99;
+    .carousel__hero_cont {
+      margin-left: 1rem;
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+
+      .hero_cont__sub_headline {
+        color: #31374e73;
+        align-self: end;
+        padding-bottom: 0.5rem;
+        grid-area: 2 / 1 / span 1 / span 7;
+      }
+      .hero_cont__headline {
+        color: #31374e;
+        font-weight: 700;
+        font-size: 2rem;
+        grid-area: 3 / 1 / span 1 / span 7;
+      }
+
+      .hero_cont__headline_cta {
+        color: white;
+        background-color: $color-darkest;
+        border: none;
+        border-radius: 1rem;
+        height: 2.5rem;
+        width: 8rem;
+        grid-area: 4 / 1 / span 1 / span 3;
+      }
+    }
+    background-image: url('/test.jpg');
+    background-position: center;
+    background-size: cover;
+    // background-color: #f99;
     counter-increment: item;
 
     &:nth-child(even) {
-      background-color: #99f;
-    }
-
-    &:before {
-      content: counter(item);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate3d(-50%, -40%, 70px);
-      color: #fff;
-      font-size: 2em;
+      background-image: url('/test2.jpg');
     }
   }
 
@@ -112,12 +137,13 @@
 
   .carousel__navigation_button {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #333;
+    width: 3rem;
+    height: 0.7rem;
+    background-color: $color-darkest;
     background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
+    border: 1rem solid transparent;
+    // margin-bottom: 0.7rem;
+    border-radius: 2rem;
     font-size: 0;
     transition: transform 0.1s;
   }
@@ -127,7 +153,7 @@
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
   }
 
