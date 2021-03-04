@@ -142,8 +142,25 @@ body {
 
 #__next {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 4rem auto;
+}
+
+button {
+  color: white;
+  background-color: $color-darkest;
+  border: none;
+  border-radius: 0.5rem;
+  height: clamp(3rem, 4vw, 4rem);
+  width: clamp(10rem, 10vw, 18rem);
+  font-size: clamp(16px, 4vw, 16px);
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer !important;
+    color: $color-darkest !important;
+    background-color: white !important;
+    border: 1px solid $color-darkest !important;
+  }
 }
