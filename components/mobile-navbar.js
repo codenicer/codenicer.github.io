@@ -47,7 +47,6 @@ export default function MobileNavbar({ done = true }) {
   useEffect(() => {
     if (done) {
       setClasses([`${styles.mobile_nav}`, 'ani-nav'])
-
       if (hide) {
         setCheked(false)
         setClasses([`${styles.mobile_nav}`, 'mnav-hide'])
