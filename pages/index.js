@@ -112,6 +112,59 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <section className={styles.iso_section}>
+          <ul className={styles.iso_list}>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+            <li className={styles.iso_container}>
+              <h1 className={styles.iso_title}>ISO 41231231</h1>
+              <h2 className={styles.iso_sub_title}>
+                Lorem id ut tempor ullamco labore pariatur pariatur sint.
+              </h2>
+              <a className={styles.iso_link}>See Details</a>
+              <img className={styles.iso_img} src="/isoiso.webp"></img>
+            </li>
+          </ul>
+        </section>
       </main>
     </>
   )
