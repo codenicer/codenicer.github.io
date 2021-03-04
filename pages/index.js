@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
@@ -20,11 +20,7 @@ export default function Home() {
         <MobileNavbar />
       </header>
       <main className={styles.container}>
-        <Carousel>
-          <img src="/test.jpg"></img>
-          <img src="/test.jpg"></img>
-          <img src="/test.jpg"></img>
-        </Carousel>
+        <Carousel />
       </main>
     </>
   )

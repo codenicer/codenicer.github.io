@@ -1,53 +1,54 @@
 import styles from '../styles/carousel.module.scss'
+import { generalSetting } from '../settings/general'
 
-export default function Navbar({ children }) {
+export default function Navbar() {
   return (
     <section className={styles.carousel_const}>
       <ol className={styles.carousel__viewport}>
-        <li
-          id="carousel__slide1"
-          className={styles.carousel__slide}
-          tabIndex="0"
-        >
-          <div className={styles.carousel__hero_cont}>
-            <h3 className={styles.hero_cont__sub_headline}>
-              NOT CERTIFIED YET?
-            </h3>
-            <h1 className={styles.hero_cont__headline}>
-              We Provide Your Certificate
-            </h1>
-            <button className={styles.hero_cont__headline_cta}>
-              Get Certified
-            </button>
-          </div>
-          <div className={styles.carousel__snapper}></div>
-        </li>
-        <li
-          id="carousel__slide2"
-          tabIndex="0"
-          className={styles.carousel__slide}
-        >
-          <div className={styles.carousel__snapper}></div>
-        </li>
+        {generalSetting.carousel.map((content, i) => {
+          return (
+            <>
+              <li
+                id={`carousel__slide${i}`}
+                className={styles.carousel__slide}
+                style={{ backgroundImage: `url(${content.img})` }}
+                tabIndex={i}
+              >
+                <div className={styles.carousel__hero_cont}>
+                  <h3 className={styles.hero_cont__sub_headline}>
+                    {content.subHeadline}
+                  </h3>
+                  <h1 className={styles.hero_cont__headline}>
+                    {content.subHeadline}
+                  </h1>
+                  {content.button ? (
+                    <button className={styles.hero_cont__headline_cta}>
+                      {content.button}
+                    </button>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+                <div className={styles.carousel__snapper}></div>
+              </li>
+            </>
+          )
+        })}
       </ol>
       <aside className={styles.carousel__navigation}>
         <ol className={styles.carousel__navigation_list}>
-          <li className={styles.carousel__navigation_item}>
-            <a
-              href="#carousel__slide1"
-              className={styles.carousel__navigation_button}
-            >
-              Go to slide 1
-            </a>
-          </li>
-          <li className={styles.carousel__navigation_item}>
-            <a
-              href="#carousel__slide2"
-              className={styles.carousel__navigation_button}
-            >
-              Go to slide 2
-            </a>
-          </li>
+          {generalSetting.carousel.map((content, i) => {
+            return (
+              <li className={styles.carousel__navigation_item}>
+                <a
+                  href={`#carousel__slide${i}`}
+                  className={styles.carousel__navigation_button}
+                >
+                  Go to slide 1
+                </a>
+              </li>
+            )
+          })}
         </ol>
       </aside>
     </section>
