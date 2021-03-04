@@ -19,7 +19,7 @@ export default function Navbar() {
                     {content.subHeadline}
                   </h3>
                   <h1 className={styles.hero_cont__headline}>
-                    {content.subHeadline}
+                    {content.headline}
                   </h1>
                   {content.button ? (
                     <button className={styles.hero_cont__headline_cta}>
