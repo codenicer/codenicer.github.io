@@ -3,6 +3,7 @@ import styles from '../../styles/about.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
 import Footer from '../../components/footer'
 import TrainWithUs from '../../components/train-with-us'
+import SectionHeader from '../../components/section-header'
 export default function About() {
   return (
     <>
@@ -19,13 +20,11 @@ export default function About() {
         <MobileNavbar />
       </header>
       <main className="section_container">
-        <section className={styles.about_header}>
-          <img className={styles.about_header_img} src="/assets/about_us.svg" />
-          <h1 className={styles.about_header_title}>About Us</h1>
-          <h5 className={styles.about_header_subtitle}>
-            Home {'>'} About {'>'}
-          </h5>
-        </section>
+        <SectionHeader
+          imgSrc={'/assets/about_us.svg'}
+          title={'About Us'}
+          section={'About'}
+        />
         <section className={styles.who_we_are}>
           <h1 className={styles.profile_title}>
             We are a UKAS accredited certification body

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/services.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
+import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
 export default function Services() {
   return (
@@ -18,16 +19,11 @@ export default function Services() {
         <MobileNavbar />
       </header>
       <main className={styles.container}>
-        <section className={styles.services_header}>
-          <img
-            className={styles.services_header_img}
-            src="/assets/about_us.svg"
-          />
-          <h1 className={styles.services_header_title}>Our</h1>
-          <h5 className={styles.services_header_subtitle}>
-            Home {'>'} Services {'>'}
-          </h5>
-        </section>
+        <SectionHeader
+          imgSrc={'/assets/services.svg'}
+          title={'Our Services'}
+          section={'Services'}
+        />
         <Footer />
       </main>
     </>

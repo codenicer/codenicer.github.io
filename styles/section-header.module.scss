@@ -1,0 +1,28 @@
+@import '_variables.scss';
+
+.header {
+  background-color: #343a51;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .header_img {
+    width: 80%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.568));
+  }
+
+  .header_title {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .header_subtitle {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+}
