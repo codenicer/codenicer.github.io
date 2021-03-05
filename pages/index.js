@@ -112,15 +112,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={styles.consult_us_continer}>
-            <img src="/img3.jpg" className={styles.consult_us__img}></img>
+          <div className={styles.train_with_us_container}>
+            <img src="/img3.jpg" className={styles.train_with_us_img}></img>
 
-            <div className={styles.consult_us_infomations}>
-              <h1 className={styles.consult_us_heading}>Consult us here</h1>
-              <p className={styles.consult_us_moto}>
+            <div className={styles.train_with_us_informations}>
+              <h1 className={styles.train_with_us_heading}>
+                We Offer Training
+              </h1>
+              <p className={styles.train_with_us_moto}>
                 Far far away, behind the word mountains, far from the countries
                 around the world.
               </p>
+              <button className={styles.train_with_us_cta}>Details</button>
               <ul>
                 <li>
                   <h5>700</h5>

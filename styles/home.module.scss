@@ -160,21 +160,21 @@
     }
   }
 
-  .consult_us_continer {
+  .train_with_us_container {
     grid-area: 5 / 1 / span 1 / -1;
     display: grid;
 
     grid-template-columns: 10px auto 10px;
     grid-template-rows: 10px auto auto 10px;
 
-    .consult_us__img {
+    .train_with_us_img {
       border-radius: 0.5rem 0.5rem 0 0;
       width: 100%;
       height: auto;
       grid-area: 2 / 2 / span 1 / span 1;
     }
 
-    .consult_us_infomations {
+    .train_with_us_informations {
       background-color: white;
       border-radius: 0 0 0.5rem 0.5rem;
       grid-area: 3 / 2 / span 1 / span 1;
@@ -182,7 +182,7 @@
       display: grid;
 
       grid-template-columns: 10px auto 10px;
-      grid-template-rows: 10px auto auto auto 10px;
+      grid-template-rows: 10px auto auto auto auto 10px;
       grid-row-gap: 1rem;
 
       h1 {
@@ -196,8 +196,12 @@
         font-weight: 300;
         grid-area: 3 / 2;
       }
-      ul {
+      .train_with_us_cta {
         grid-area: 4 / 2;
+      }
+
+      ul {
+        grid-area: 5 / 2;
         li {
           margin: 1.5rem 0;
           h5 {
@@ -289,7 +293,7 @@
 
 .main_footer {
   padding-bottom: 4rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   height: auto;
   width: 100vw;
   background-color: $color-darkest;
