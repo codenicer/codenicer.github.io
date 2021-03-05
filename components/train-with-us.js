@@ -2,7 +2,10 @@ import styles from '../styles/train-with-us.module.scss'
 export default function IntrouctionSection({ position }) {
   return (
     <div className={styles.train_with_us_container} style={position}>
-      <img src="/img3.jpg" className={styles.train_with_us_img}></img>
+      <div className={styles.train_img_cont}>
+        <img src="/img3.jpg" className={styles.train_with_us_img} />
+        <div className={styles.filter}></div>
+      </div>
 
       <div className={styles.train_with_us_informations}>
         <h1 className={styles.train_with_us_heading}>We Offer Training</h1>

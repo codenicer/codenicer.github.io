@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import homeStyle from '../../styles/home.module.scss'
 import styles from '../../styles/about.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
 import Footer from '../../components/footer'
@@ -19,7 +18,7 @@ export default function About() {
       <header className={styles.nav_container}>
         <MobileNavbar />
       </header>
-      <main className={styles.container}>
+      <main className="section_container">
         <section className={styles.about_header}>
           <img className={styles.about_header_img} src="/assets/about_us.svg" />
           <h1 className={styles.about_header_title}>About Us</h1>
