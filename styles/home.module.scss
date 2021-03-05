@@ -91,6 +91,7 @@
       grid-area: 2 / 2;
     }
     .who_we_are__information {
+      font-weight: 300;
       grid-area: 3 / 2;
     }
     .who_we_are__cta {
@@ -124,6 +125,7 @@
     }
 
     .who_we_do__information {
+      font-weight: 300;
       color: white;
       grid-area: 4 / 2;
     }
@@ -154,8 +156,9 @@
 
     .services__information {
       color: white;
+      font-weight: 300;
       grid-area: 4 / 2;
-      height: auto;
+      // height: auto;
       width: 80%;
     }
   }

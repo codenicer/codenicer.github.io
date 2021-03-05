@@ -123,7 +123,7 @@ export default function Home() {
                 Far far away, behind the word mountains, far from the countries
                 around the world.
               </p>
-              <button className={styles.train_with_us_cta}>Details</button>
+              <button className={styles.train_with_us_cta}>View Details</button>
               <ul>
                 <li>
                   <h5>700</h5>
