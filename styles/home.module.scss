@@ -42,7 +42,7 @@
   left: 0;
 
   .hero_cont__sub_headline {
-    color: #31374e73;
+    color: #545e83;
     align-self: end;
     font-size: clamp(1.2rem, 3vw, 5rem);
     padding-bottom: 0.5rem;
@@ -107,8 +107,8 @@
     grid-area: 3 / 1 / span 1 / -1;
     display: grid;
     border-radius: 0.5rem;
-    background-color: #0099bf;
-    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    background-color: #017d9b;
+    grid-template-rows: 1fr 1fr 2fr 3fr 1fr;
     grid-template-columns: 1fr 8fr 1fr;
 
     .who_we_do__icon {
@@ -137,7 +137,7 @@
     grid-area: 4 / 1 / span 1 / -1;
     display: grid;
     border-radius: 0.5rem;
-    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 3fr 1fr;
     grid-template-columns: 1fr 8fr 1fr;
 
     background-color: #00c9d1;
@@ -147,7 +147,7 @@
       grid-area: 2 / 2;
     }
     .services__heading {
-      color: white;
+      color: #393939;
       align-self: center;
       font-size: 2rem;
       font-weight: 700;
@@ -155,10 +155,9 @@
     }
 
     .services__information {
-      color: white;
+      color: #393939;
       font-weight: 300;
       grid-area: 4 / 2;
-      // height: auto;
       width: 80%;
     }
   }

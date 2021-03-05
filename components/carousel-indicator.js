@@ -13,10 +13,10 @@ const Dot = ({ selected }) => {
 
 export default function CarouselIndicator(props) {
   if (props.total < 2) {
-    return <div className={styles.indicator_wrapper} />
+    return <div key={props.index} className={styles.indicator_wrapper} />
   } else {
     return (
-      <div className={styles.indicator_wrapper}>
+      <div key={props.index} className={styles.indicator_wrapper}>
         {Array.apply(null, Array(props.total)).map((x, i) => {
           return <Dot key={i} selected={props.index === i} />
         })}
