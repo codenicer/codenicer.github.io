@@ -1,4 +1,6 @@
 import styles from '../styles/home.module.scss'
+import TrainWithUs from '../components/train-with-us'
+import Link from 'next/link'
 export default function IntrouctionSection() {
   return (
     <section className={styles.introduction_cont}>
@@ -25,6 +27,9 @@ export default function IntrouctionSection() {
           voluptate. Deserunt elit et minim magna pariatur quis exercitation
           amet consectetur excepteur pariatur.
         </p>
+        <Link href="/about">
+          <button>Read More</button>
+        </Link>
       </div>
 
       <div className={styles.intoduction_services}>
@@ -39,38 +44,11 @@ export default function IntrouctionSection() {
           voluptate. Deserunt elit et minim magna pariatur quis exercitation
           amet consectetur excepteur pariatur.
         </p>
+        <Link href="/about">
+          <button>Read More</button>
+        </Link>
       </div>
-
-      <div className={styles.train_with_us_container}>
-        <img src="/img3.jpg" className={styles.train_with_us_img}></img>
-
-        <div className={styles.train_with_us_informations}>
-          <h1 className={styles.train_with_us_heading}>We Offer Training</h1>
-          <p className={styles.train_with_us_moto}>
-            Far far away, behind the word mountains, far from the countries
-            around the world.
-          </p>
-          <button className={styles.train_with_us_cta}>View Details</button>
-          <ul>
-            <li>
-              <h5>700</h5>
-              <p>Certicate Issued</p>
-            </li>
-            <li>
-              <h5>600</h5>
-              <p>Happy Clients</p>
-            </li>
-            <li>
-              <h5>999</h5>
-              <p>Business Partners</p>
-            </li>
-            <li>
-              <h5>700</h5>
-              <p>Consultant</p>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <TrainWithUs position={{ gridArea: ' 5 / 1 / span 1 / -1' }} />
     </section>
   )
 }

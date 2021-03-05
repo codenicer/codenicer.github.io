@@ -80,7 +80,8 @@
     width: 80%;
     height: auto;
     display: grid;
-    grid-template-rows: 1fr 2fr 3fr 2fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-rows: 2rem repeat(3, auto) 1fr 2rem;
     grid-template-columns: 1fr 8fr 1fr;
     border-radius: 0.5rem;
     color: $color-darkest;
@@ -108,7 +109,8 @@
     display: grid;
     border-radius: 0.5rem;
     background-color: #017d9b;
-    grid-template-rows: 1fr 1fr 2fr 3fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-rows: 2rem repeat(4, auto) 2rem;
     grid-template-columns: 1fr 8fr 1fr;
 
     .who_we_do__icon {
@@ -129,6 +131,11 @@
       color: white;
       grid-area: 4 / 2;
     }
+
+    button {
+      justify-self: center;
+      grid-area: 5 / 2;
+    }
   }
 
   .intoduction_services {
@@ -137,7 +144,8 @@
     grid-area: 4 / 1 / span 1 / -1;
     display: grid;
     border-radius: 0.5rem;
-    grid-template-rows: 1fr 1fr 2fr 3fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-rows: 2rem repeat(4, auto) 2rem;
     grid-template-columns: 1fr 8fr 1fr;
 
     background-color: #00c9d1;
@@ -160,64 +168,9 @@
       grid-area: 4 / 2;
       width: 80%;
     }
-  }
-
-  .train_with_us_container {
-    grid-area: 5 / 1 / span 1 / -1;
-    display: grid;
-
-    grid-template-columns: 10px auto 10px;
-    grid-template-rows: 10px auto auto 10px;
-
-    .train_with_us_img {
-      border-radius: 0.5rem 0.5rem 0 0;
-      width: 100%;
-      height: auto;
-      grid-area: 2 / 2 / span 1 / span 1;
-    }
-
-    .train_with_us_informations {
-      background-color: white;
-      border-radius: 0 0 0.5rem 0.5rem;
-      grid-area: 3 / 2 / span 1 / span 1;
-
-      display: grid;
-
-      grid-template-columns: 10px auto 10px;
-      grid-template-rows: 10px auto auto auto auto 10px;
-      grid-row-gap: 1rem;
-
-      h1 {
-        color: $color-darkest;
-        font-weight: 700;
-        font-size: 2rem;
-        grid-area: 2 / 2;
-      }
-      & > p {
-        color: $color-darkest;
-        font-weight: 300;
-        grid-area: 3 / 2;
-      }
-      .train_with_us_cta {
-        grid-area: 4 / 2;
-      }
-
-      ul {
-        grid-area: 5 / 2;
-        li {
-          margin: 1.5rem 0;
-          h5 {
-            margin: 0.5rem 0;
-            color: $color-darkest;
-            font-weight: 700;
-            font-size: 1.5rem;
-          }
-          p {
-            color: $color-darkest;
-            font-weight: 300;
-          }
-        }
-      }
+    button {
+      justify-self: center;
+      grid-area: 5 / 2;
     }
   }
 }
@@ -240,9 +193,10 @@
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     margin: 5rem 0;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    // &::-webkit-scrollbar {
+    //   display: none;
+    //   background-color: ;
+    // }
     &:before,
     &:after {
       content: '';

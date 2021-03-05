@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import styles from '../styles/mobile-navbar.module.scss'
 
 export default function MobileNavbar({ done = true }) {
@@ -114,37 +115,41 @@ export default function MobileNavbar({ done = true }) {
           <div>
             <ul className={styles.mobile_nav_link_list}>
               <li>
-                <a>
-                  <div className={styles.mobile_nav__list_cont}>
-                    <svg width="20" height="20" viewBox="0 0 30.849 27.987">
-                      <path
-                        id="Icon_metro-home"
-                        dataname="Icon metro-home"
-                        d="M33.419,19.715,17.995,7.743,2.571,19.716V14.834L17.995,2.861,33.419,14.834Zm-3.856-.435V30.849H21.851V23.136H14.139v7.712H6.427V19.28L17.995,10.6Z"
-                        transform="translate(-2.571 -2.861)"
-                        fill="#fff"
-                      />
-                    </svg>
+                <Link href="/">
+                  <a>
+                    <div className={styles.mobile_nav__list_cont}>
+                      <svg width="20" height="20" viewBox="0 0 30.849 27.987">
+                        <path
+                          id="Icon_metro-home"
+                          dataname="Icon metro-home"
+                          d="M33.419,19.715,17.995,7.743,2.571,19.716V14.834L17.995,2.861,33.419,14.834Zm-3.856-.435V30.849H21.851V23.136H14.139v7.712H6.427V19.28L17.995,10.6Z"
+                          transform="translate(-2.571 -2.861)"
+                          fill="#fff"
+                        />
+                      </svg>
 
-                    <p>Home</p>
-                  </div>
-                </a>
+                      <p>Home</p>
+                    </div>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a>
-                  <div className={styles.mobile_nav__list_cont}>
-                    <svg width="20" height="20" viewBox="0 0 18 36">
-                      <path
-                        id="Icon_open-info"
-                        dataname="Icon open-info"
-                        d="M13.5,0A4.5,4.5,0,1,0,18,4.5,4.513,4.513,0,0,0,13.5,0ZM6.75,11.25A6.741,6.741,0,0,0,0,18H4.5A2.25,2.25,0,0,1,9,18c0,1.26-4.5,7.38-4.5,11.25A6.657,6.657,0,0,0,11.25,36,6.741,6.741,0,0,0,18,29.25H13.5a2.25,2.25,0,0,1-4.5,0c0-1.62,4.5-8.28,4.5-11.25A6.8,6.8,0,0,0,6.75,11.25Z"
-                        fill="#fff"
-                      />
-                    </svg>
+                <Link href="/about">
+                  <a styles={{ textDecoration: 'none' }}>
+                    <div className={styles.mobile_nav__list_cont}>
+                      <svg width="20" height="20" viewBox="0 0 18 36">
+                        <path
+                          id="Icon_open-info"
+                          dataname="Icon open-info"
+                          d="M13.5,0A4.5,4.5,0,1,0,18,4.5,4.513,4.513,0,0,0,13.5,0ZM6.75,11.25A6.741,6.741,0,0,0,0,18H4.5A2.25,2.25,0,0,1,9,18c0,1.26-4.5,7.38-4.5,11.25A6.657,6.657,0,0,0,11.25,36,6.741,6.741,0,0,0,18,29.25H13.5a2.25,2.25,0,0,1-4.5,0c0-1.62,4.5-8.28,4.5-11.25A6.8,6.8,0,0,0,6.75,11.25Z"
+                          fill="#fff"
+                        />
+                      </svg>
 
-                    <p>About</p>
-                  </div>
-                </a>
+                      <p>About</p>
+                    </div>
+                  </a>
+                </Link>
               </li>
               <li>
                 <a>
