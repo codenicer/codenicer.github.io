@@ -25,13 +25,14 @@ export default function Home() {
           <Carousel loop auto interval={8000} widgets={[CarouselIndicator]}>
             {generalSetting.carousel.map((content, i) => {
               return (
-                <div
-                  key={i}
-                  className={styles.carousel_img}
-                  style={{
-                    backgroundImage: `url('${content.img}')`,
-                  }}
-                >
+                <>
+                  <div
+                    key={i}
+                    className={styles.carousel_img}
+                    style={{
+                      backgroundImage: `url('${content.img}')`,
+                    }}
+                  ></div>
                   <div className={styles.carousel__hero_cont}>
                     <h3 className={styles.hero_cont__sub_headline}>
                       {content.subHeadline}
@@ -47,8 +48,7 @@ export default function Home() {
                       <></>
                     )}
                   </div>
-                  <div className={styles.carousel__snapper}></div>
-                </div>
+                </>
               )
             })}
           </Carousel>
@@ -110,6 +110,36 @@ export default function Home() {
               exercitation voluptate. Deserunt elit et minim magna pariatur quis
               exercitation amet consectetur excepteur pariatur.
             </p>
+          </div>
+
+          <div className={styles.consult_us_continer}>
+            <img src="/img3.jpg" className={styles.consult_us__img}></img>
+
+            <div className={styles.consult_us_infomations}>
+              <h1 className={styles.consult_us_heading}>Consult us here</h1>
+              <p className={styles.consult_us_moto}>
+                Far far away, behind the word mountains, far from the countries
+                around the world.
+              </p>
+              <ul>
+                <li>
+                  <h5>700</h5>
+                  <p>Certicate Issued</p>
+                </li>
+                <li>
+                  <h5>600</h5>
+                  <p>Happy Clients</p>
+                </li>
+                <li>
+                  <h5>999</h5>
+                  <p>Business Partners</p>
+                </li>
+                <li>
+                  <h5>700</h5>
+                  <p>Consultant</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
