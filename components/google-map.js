@@ -4,9 +4,9 @@ import GoogleMapReact from 'google-map-react'
 const AnyReactComponent = ({ text }) => (
   <div
     style={{
-      height: '2rem',
-      width: '2rem',
-      backgroundImage: "url('/assets/location_contact.svg')",
+      height: '1.9rem',
+      width: '1.20rem',
+      backgroundImage: "url('/assets/here_logo.svg')",
     }}
   ></div>
 )
