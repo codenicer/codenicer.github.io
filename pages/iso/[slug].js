@@ -25,7 +25,11 @@ export default function Iso() {
       <header className={styles.nav_container}>
         <MobileNavbar />
       </header>
-      <main className="section_container" style={{ overflowX: 'hidden' }}>
+      <main
+        id="toptop"
+        className="section_container"
+        style={{ overflowX: 'hidden' }}
+      >
         <SectionHeader
           iso={true}
           imgSrc={`/${iso?.imgSrc ? `uploads/${iso.imgSrc}` : 'not-found.jpg'}`}

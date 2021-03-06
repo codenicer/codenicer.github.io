@@ -4,6 +4,9 @@ import MobileNavbar from '../components/mobile-navbar'
 import CarouselSection from '../components/carousel-section'
 import IntroductionSection from '../components/introductio-section'
 import Footer from '../components/footer'
+import { isoServiceList } from '../settings/iso-service-list'
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <>
@@ -24,20 +27,24 @@ export default function Home() {
         <IntroductionSection />
         <section className={styles.iso_section}>
           <ul className={styles.iso_list}>
-            {Array(6)
-              .fill('wew')
-              .map((c, i) => {
-                return (
-                  <li key={i} className={styles.iso_container}>
-                    <h1 className={styles.iso_title}>ISO 41231231</h1>
-                    <h2 className={styles.iso_sub_title}>
-                      Lorem id ut tempor ullamco labore pariatur pariatur sint.
-                    </h2>
-                    <a className={styles.iso_link}>See Details</a>
-                    <img className={styles.iso_img} src="/isoiso.webp"></img>
-                  </li>
-                )
-              })}
+            {Object.values(isoServiceList).map((content, i) => {
+              return (
+                <li key={i} className={styles.iso_container}>
+                  <h1 className={styles.iso_title}>{content.title}</h1>
+                  <h2 className={styles.iso_sub_title}>
+                    {content.headline[0].headlineText.slice(0, 100) + '...'}
+                  </h2>
+                  <Link href={`/iso/${content.slug}`}>
+                    <button className={styles.iso_link}>Read More</button>
+                  </Link>
+
+                  <img
+                    className={styles.iso_img}
+                    src={`/uploads/${content.imgSrc}`}
+                  ></img>
+                </li>
+              )
+            })}
           </ul>
         </section>
         <Footer />

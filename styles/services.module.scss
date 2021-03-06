@@ -36,7 +36,7 @@
     display: grid;
     grid-gap: 2.2rem;
     height: auto;
-    grid-template-columns: 10px repeat(4, 20rem) 10px;
+    grid-template-columns: 10px repeat(5, 20rem) 10px;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     margin-bottom: 4rem;

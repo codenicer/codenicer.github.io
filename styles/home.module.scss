@@ -192,7 +192,7 @@
     display: grid;
     grid-gap: 2.2rem;
     height: auto;
-    grid-template-columns: 10px repeat(6, 18rem) 10px;
+    grid-template-columns: 10px repeat(5, 20rem) 10px;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     margin: 5rem 0;
@@ -249,6 +249,7 @@
         grid-area: 5 / 1 / span 1 / span 5;
         width: 100%;
         height: auto;
+        max-height: 12rem;
       }
     }
   }
