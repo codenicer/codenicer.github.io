@@ -18,7 +18,7 @@ export default function Services() {
       <header className={styles.nav_container}>
         <MobileNavbar />
       </header>
-      <main className={styles.container}>
+      <main className="section_container" style={{ overflowX: 'hidden' }}>
         <SectionHeader
           customImageStyle={{
             transform: 'scale(.8)',
@@ -29,7 +29,7 @@ export default function Services() {
         />
         <section className={styles.services_info_cont}>
           <h1 className={styles.services_title}>Our Services</h1>
-          <p className={styles.services_title}>
+          <p className={styles.information}>
             WQA is a reputable management system provider, worldwide. We at
             Worldwide Quality Assurance (WQA) provide quality services to our
             clients through internationally recognized accredited certifications
@@ -46,6 +46,46 @@ export default function Services() {
             27001, GMP, HACCP, ISO 37001 & ISO 50001). And also provide other
             training that are related to ISO and Process Improvements.
           </p>
+        </section>
+        <section className={styles.service_list_container}>
+          <ul className={styles.sevices_list}>
+            <li className={styles.service_container}>
+              <h1 className={styles.sevices_title}>ISO 9001</h1>
+              <p className={styles.sevices_info}>
+                The ISO 9001 is a series of requirements that, when consistently
+                applied to your company that ensures SATISFACTION ,MANAGEMENT,
+                CONTROL, COMPLIANCE...
+              </p>
+              <button className={styles.sevices_read_more}>Read More</button>
+            </li>
+            <li className={styles.service_container}>
+              <h1 className={styles.sevices_title}>ISO 9001</h1>
+              <p className={styles.sevices_info}>
+                The ISO 9001 is a series of requirements that, when consistently
+                applied to your company that ensures SATISFACTION ,MANAGEMENT,
+                CONTROL, COMPLIANCE...
+              </p>
+              <button className={styles.sevices_read_more}>Read More</button>
+            </li>
+            <li className={styles.service_container}>
+              <h1 className={styles.sevices_title}>ISO 9001</h1>
+              <p className={styles.sevices_info}>
+                The ISO 9001 is a series of requirements that, when consistently
+                applied to your company that ensures SATISFACTION ,MANAGEMENT,
+                CONTROL, COMPLIANCE...
+              </p>
+              <button className={styles.sevices_read_more}>Read More</button>
+            </li>
+            <li className={styles.service_container}>
+              <h1 className={styles.sevices_title}>ISO 9001</h1>
+              <p className={styles.sevices_info}>
+                The ISO 9001 is a series of requirements that, when consistently
+                applied to your company that ensures SATISFACTION ,MANAGEMENT,
+                CONTROL, COMPLIANCE...
+              </p>
+              <button className={styles.sevices_read_more}>Read More</button>
+            </li>
+          </ul>
         </section>
         <Footer />
       </main>
