@@ -11,7 +11,9 @@ export default function IntrouctionSection() {
           voluptate. Deserunt elit et minim magna pariatur quis exercitation
           amet consectetur excepteur pariatur.
         </p>
-        <button className={styles.who_we_are__cta}>Contact Us</button>
+        <Link href="/contact_us">
+          <button className={styles.who_we_are__cta}>Contact Us</button>
+        </Link>
       </div>
 
       <div className={styles.intoduction_what_we_do}>
@@ -44,7 +46,7 @@ export default function IntrouctionSection() {
           voluptate. Deserunt elit et minim magna pariatur quis exercitation
           amet consectetur excepteur pariatur.
         </p>
-        <Link href="/about">
+        <Link href="/services">
           <button>Read More</button>
         </Link>
       </div>

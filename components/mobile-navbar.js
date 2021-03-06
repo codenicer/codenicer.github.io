@@ -70,36 +70,40 @@ export default function MobileNavbar({ done = true }) {
 
   return (
     <nav className={classes.join(' ')}>
-      <svg
-        dataname="Component 10 – 1"
-        width="45"
-        height="45"
-        viewBox="0 0 64 64"
-      >
-        <g
-          id="Ellipse_2"
-          dataname="Ellipse 2"
-          fill="#fff"
-          stroke="#3c58cb"
-          strokeWidth="5"
+      <Link href="/">
+        <svg
+          dataname="Component 10 – 1"
+          width="45"
+          height="45"
+          viewBox="0 0 64 64"
         >
-          <circle cx="32" cy="32" r="32" stroke="none" />
-          <circle cx="32" cy="32" r="29.5" fill="none" />
-        </g>
-        <text
-          id="WQA"
-          transform="translate(10 38)"
-          fill="#001c8e"
-          fontSize="17"
-          fontFamily="Poppins-Bold, Poppins"
-          fontWeight="700"
-        >
-          <tspan x="0" y="0">
-            WQA
-          </tspan>
-        </text>
-      </svg>
-      <h5>More that just a Certifacte</h5>
+          <g
+            id="Ellipse_2"
+            dataname="Ellipse 2"
+            fill="#fff"
+            stroke="#3c58cb"
+            strokeWidth="5"
+          >
+            <circle cx="32" cy="32" r="32" stroke="none" />
+            <circle cx="32" cy="32" r="29.5" fill="none" />
+          </g>
+          <text
+            id="WQA"
+            transform="translate(10 38)"
+            fill="#001c8e"
+            fontSize="17"
+            fontFamily="Poppins-Bold, Poppins"
+            fontWeight="700"
+          >
+            <tspan x="0" y="0">
+              WQA
+            </tspan>
+          </text>
+        </svg>
+      </Link>
+      <Link href="/">
+        <h5>More that just a Certifacte</h5>
+      </Link>
       <input
         checked={checked}
         onChange={() => setCheked(!checked)}

@@ -1,0 +1,47 @@
+@import '_variables.scss';
+.iso_contaner {
+  background-color: #f2f2f2;
+  grid-row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+
+  .iso_contaner_title {
+    margin: 4rem 20px 0 20px;
+    text-decoration: underline;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .iso_headline {
+    margin: 0 20px;
+    color: $color-darkest;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    // font-weight: 300;
+  }
+  .iso_headline_list {
+    margin: 0 20px;
+    margin-top: -1.1rem;
+    line-height: 1.3rem;
+    li::before {
+      content: '>';
+      color: $color-darkest;
+    }
+  }
+
+  .iso_sub_headline {
+    color: $color-darkest;
+    margin: 0 20px;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .iso_sub_headline_list {
+    margin: 0 20px;
+    font-weight: 300;
+    li::before {
+      content: '>';
+      color: $color-darkest;
+    }
+  }
+}

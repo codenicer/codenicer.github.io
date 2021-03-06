@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../../styles/contact-us.module.scss'
+import styles from '../../styles/iso.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
 import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
@@ -28,17 +28,53 @@ export default function Iso() {
       <main className="section_container" style={{ overflowX: 'hidden' }}>
         <SectionHeader
           iso={true}
-          imgSrc={`/${iso?.imgSrc ? iso.imgSrc : 'not-found.jpg'}`}
+          imgSrc={`/${iso?.imgSrc ? `uploads/${iso.imgSrc}` : 'not-found.jpg'}`}
           title={`${iso?.title ? iso.title : 'Not Found'}`}
           section={'Iso'}
         />
         {!iso ? (
-          <h1>ISO NOT FOUND</h1>
+          <></>
         ) : (
           <section className={styles.iso_contaner}>
-            <p className={styles.iso_headline}>{iso.headline}</p>
+            <h1 className={styles.iso_contaner_title}>{iso.title}</h1>
+            {iso.headline.map((content, i) => {
+              console.log(content.headlineList)
+              return (
+                <>
+                  <h1 key={i} className={styles.iso_headline}>
+                    {content.headlineText}
+                  </h1>
+                  {!content.headlineList ? (
+                    <></>
+                  ) : (
+                    <ul className={styles.iso_headline_list}>
+                      {content.headlineList.map((text, i) => {
+                        return <li key={i}> {text}</li>
+                      })}
+                    </ul>
+                  )}
+                </>
+              )
+            })}
 
-            <p className={styles.iso_sub_headline}>{iso.subHeadline}</p>
+            {iso.subHeadline.map((content, i) => {
+              return (
+                <>
+                  <h1 key={i} className={styles.iso_sub_headline}>
+                    {content.subheadlineText}
+                  </h1>
+                  {!content.subheadlineList ? (
+                    <></>
+                  ) : (
+                    <ul className={styles.iso_sub_headline_list}>
+                      {content.subheadlineList.map((text, i) => {
+                        return <li key={i}> {text}</li>
+                      })}
+                    </ul>
+                  )}
+                </>
+              )
+            })}
           </section>
         )}
         <ServicesList />
@@ -47,3 +83,8 @@ export default function Iso() {
     </>
   )
 }
+
+//
+// <p className={styles.iso_headline}>{iso.headline}</p>
+
+// <p className={styles.iso_sub_headline}>{iso.subHeadline}</p>

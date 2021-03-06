@@ -13,7 +13,13 @@ export default function IntrouctionSection({ position }) {
           Far far away, behind the word mountains, far from the countries around
           the world.
         </p>
-        <button className={styles.train_with_us_cta}>View Details</button>
+        <a
+          className={styles.train_with_us_cta}
+          href="/Annual Training Program Schedule- WQA.pdf"
+          target="_blank"
+        >
+          <button className={styles.train_with_us_cta}>View Details</button>
+        </a>
         <ul>
           <li>
             <h5>700</h5>

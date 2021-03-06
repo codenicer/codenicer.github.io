@@ -2,6 +2,7 @@ import styles from '../styles/home.module.scss'
 import { generalSetting } from '../settings/general'
 import CarouselIndicator from './carousel-indicator'
 import Carousel from 're-carousel'
+import Link from 'next/link'
 
 export default function CarouselSection() {
   return (
