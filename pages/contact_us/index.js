@@ -20,7 +20,10 @@ export default function ContactUs() {
       </header>
       <main className="section_container">
         <SectionHeader
-          imgSrc={'/assets/about_us.svg'}
+          customImageStyle={{
+            transform: 'scale(.8)',
+          }}
+          imgSrc={'/assets/contact_us.svg'}
           title={'Contact Us'}
           section={'Contact Us'}
         />

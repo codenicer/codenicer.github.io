@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32.142 27.498">
+  <g id="Icon_ionic-md-contacts" data-name="Icon ionic-md-contacts" transform="translate(-2.25 -4.002)">
+    <g id="Group_10" data-name="Group 10">
+      <path id="Path_1" data-name="Path 1" d="M16.819,24.183a8.6,8.6,0,0,1-8.473,0C5.03,25.2,3,28.547,2.25,31.5H22.916C22.168,28.547,20.136,25.194,16.819,24.183Z" fill="#017d9b"/>
+      <path id="Path_2" data-name="Path 2" d="M12.583,8.44a7.443,7.443,0,1,0,7.445,7.443A7.444,7.444,0,0,0,12.583,8.44Zm0,13.112A5.752,5.752,0,0,1,7.38,18H17.786A5.752,5.752,0,0,1,12.583,21.552Z" fill="#017d9b"/>
+    </g>
+    <g id="Group_11" data-name="Group 11">
+      <path id="Path_3" data-name="Path 3" d="M22.683,27H33.75a9.2,9.2,0,0,0-6.1-6.755,8.6,8.6,0,0,1-7.2.589,9.865,9.865,0,0,1-1.967,2.454A9.547,9.547,0,0,1,22.683,27Z" fill="#00c9d1" stroke="#fff" stroke-width="1"/>
+      <path id="Path_4" data-name="Path 4" d="M21.554,14.063H28.62a5.739,5.739,0,0,1-5.2,3.536,5.346,5.346,0,0,1-1.784-.317,9.029,9.029,0,0,1-.458,1.766A7.447,7.447,0,1,0,17.142,7.953,9.2,9.2,0,0,1,21.554,14.063Z" fill="#00c9d1" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
