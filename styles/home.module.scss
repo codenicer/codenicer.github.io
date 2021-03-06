@@ -64,6 +64,9 @@
 }
 
 .introduction_cont {
+  p {
+    line-height: 1.5rem;
+  }
   background-color: $bg-color-darkest;
   // overflow-x: hidden;
   width: 100%;
