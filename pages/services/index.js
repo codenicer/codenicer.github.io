@@ -38,13 +38,21 @@ export default function Services() {
             assessments. Our work ethics are built on fundamental respects for
             customer satisfaction. We have the strength of experienced and
             calibrated professionals across the countries. Our products are
-            Management System Certification ISO 9001, ISO 14001, OHSAS 18001,
-            ISO 13485, ISO 22000, HACCP, GMP , ISO 22301, ISO 27001, ISO 50001,
-            ISO 37001,2nd Party Audit, Independent Supplier/Vendor Assessment.
-            We can provide Training like as IRCA & IEMA International Lead
-            Auditor Courses (ISO 9001, ISO 14001, OHSAS 18001, ISO 22000, ISO
-            27001, GMP, HACCP, ISO 37001 & ISO 50001). And also provide other
-            training that are related to ISO and Process Improvements.
+            Management System Certification{' '}
+            <span className={styles.iso_p}>
+              {' '}
+              ISO 9001, ISO 14001, OHSAS 18001, ISO 13485, ISO 22000, HACCP, GMP
+              , ISO 22301, ISO 27001, ISO 50001, ISO 37001{' '}
+            </span>
+            ,2nd Party Audit, Independent Supplier/Vendor Assessment. We can
+            provide Training like as IRCA & IEMA International Lead Auditor
+            Courses{' '}
+            <span className={styles.iso_p}>
+              (ISO 9001, ISO 14001, OHSAS 18001, ISO 22000, ISO 27001, GMP,
+              HACCP, ISO 37001 & ISO 50001)
+            </span>
+            . And also provide other training that are related to ISO and
+            Process Improvements.
           </p>
         </section>
         <section className={styles.service_list_container}>

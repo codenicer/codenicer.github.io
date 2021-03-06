@@ -216,13 +216,18 @@
       color: white;
 
       .iso_title {
+        font-family: 'Teko', sans-serif;
+        color: white;
+
+        font-weight: 700;
         justify-self: center;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 1rem 0;
         grid-area: 2 / 2 / span 1 / span 3;
       }
       .iso_sub_title {
+        line-height: 1.5rem;
         grid-area: 3 / 2 / span 1 / span 3;
         font-weight: 300;
         margin: 1rem 0;

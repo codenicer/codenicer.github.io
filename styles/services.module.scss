@@ -44,6 +44,7 @@
       grid-template-rows: 10px repeat(3, auto) 10px;
       grid-row-gap: 2rem;
       .sevices_title {
+        font-family: 'Teko', sans-serif;
         color: white;
         justify-self: center;
         font-size: 2rem;
@@ -63,4 +64,10 @@
       }
     }
   }
+}
+
+.iso_p {
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
