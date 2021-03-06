@@ -5,11 +5,12 @@ export default function SectionHeader({
   title,
   section,
   customImageStyle,
+  iso,
 }) {
   return (
-    <section className={styles.header}>
+    <section className={` ${styles.header} ${iso ? styles.header_iso : ''}`}>
       <img
-        className={styles.header_img}
+        className={iso ? styles.header_img_iso : styles.header_img}
         style={customImageStyle}
         src={imgSrc}
       />
