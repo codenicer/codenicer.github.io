@@ -171,25 +171,27 @@ export default function MobileNavbar({ done = true }) {
                 </Link>
               </li>
               <li>
-                <a>
-                  <div className={styles.mobile_nav__list_cont}>
-                    <svg width="20" height="20" viewBox="0 0 32.835 32.895">
-                      <path
-                        id="Icon_feather-phone"
-                        dataname="Icon feather-phone"
-                        d="M33,25.38v4.5a3,3,0,0,1-3.27,3,29.685,29.685,0,0,1-12.945-4.6,29.25,29.25,0,0,1-9-9A29.685,29.685,0,0,1,3.18,6.27,3,3,0,0,1,6.165,3h4.5a3,3,0,0,1,3,2.58A19.26,19.26,0,0,0,14.715,9.8a3,3,0,0,1-.675,3.165l-1.905,1.9a24,24,0,0,0,9,9l1.9-1.905a3,3,0,0,1,3.165-.675,19.26,19.26,0,0,0,4.215,1.05A3,3,0,0,1,33,25.38Z"
-                        transform="translate(-1.667 -1.5)"
-                        fill="none"
-                        stroke="#fff"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="3"
-                      />
-                    </svg>
+                <Link href="/contact_us">
+                  <a>
+                    <div className={styles.mobile_nav__list_cont}>
+                      <svg width="20" height="20" viewBox="0 0 32.835 32.895">
+                        <path
+                          id="Icon_feather-phone"
+                          dataname="Icon feather-phone"
+                          d="M33,25.38v4.5a3,3,0,0,1-3.27,3,29.685,29.685,0,0,1-12.945-4.6,29.25,29.25,0,0,1-9-9A29.685,29.685,0,0,1,3.18,6.27,3,3,0,0,1,6.165,3h4.5a3,3,0,0,1,3,2.58A19.26,19.26,0,0,0,14.715,9.8a3,3,0,0,1-.675,3.165l-1.905,1.9a24,24,0,0,0,9,9l1.9-1.905a3,3,0,0,1,3.165-.675,19.26,19.26,0,0,0,4.215,1.05A3,3,0,0,1,33,25.38Z"
+                          transform="translate(-1.667 -1.5)"
+                          fill="none"
+                          stroke="#fff"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="3"
+                        />
+                      </svg>
 
-                    <p>Contact</p>
-                  </div>
-                </a>
+                      <p>Contact</p>
+                    </div>
+                  </a>
+                </Link>
               </li>
               <li>
                 <a>
