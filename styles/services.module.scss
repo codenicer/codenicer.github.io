@@ -7,7 +7,7 @@
   display: grid;
   padding: 2rem 0;
   .services_title {
-    color: $color-darkest;
+    color: black;
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem 0;
@@ -21,8 +21,16 @@
 }
 
 .service_list_container {
+  margin-top: 4rem;
   width: 100%;
   height: auto;
+
+  .service_list_header {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 2rem;
+  }
   .sevices_list {
     filter: drop-shadow(0 0 10px #00000042);
     display: grid;
@@ -31,7 +39,7 @@
     grid-template-columns: 10px repeat(4, 20rem) 10px;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
-    margin: 4rem 0;
+    margin-bottom: 4rem;
     &:before,
     &:after {
       content: '';

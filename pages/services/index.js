@@ -58,6 +58,7 @@ export default function Services() {
           </p>
         </section>
         <section className={styles.service_list_container}>
+          <h1 className={styles.service_list_header}>Available Services</h1>
           <ul className={styles.sevices_list}>
             <li className={styles.service_container}>
               <h1 className={styles.sevices_title}>ISO 9001</h1>
