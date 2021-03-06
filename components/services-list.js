@@ -20,10 +20,9 @@ export default function Services() {
               <button
                 onClick={() => {
                   router.push(`/iso/${content.slug}`).then(() => {
-                    console.log(window)
+                    router.reload(window.location.pathname)
                   })
                   // router.push(`/iso/${content.slug}`)
-                  // router.reload(window.location.pathname)
                 }}
                 className={styles.sevices_read_more}
               >
