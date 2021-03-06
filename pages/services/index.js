@@ -30,15 +30,17 @@ export default function Services() {
         <section className={styles.services_info_cont}>
           <h1 className={styles.services_title}>Our Services</h1>
           <p className={styles.information}>
-            WQA is a reputable management system provider, worldwide. We at
-            Worldwide Quality Assurance (WQA) provide quality services to our
-            clients through internationally recognized accredited certifications
-            for the ideal Quality Standards. WQA is your partner in making
-            management system better and effective through its value-added
-            assessments. Our work ethics are built on fundamental respects for
-            customer satisfaction. We have the strength of experienced and
-            calibrated professionals across the countries. Our products are
-            Management System Certification{' '}
+            <span className={styles.iso_p}>
+              WQA is a reputable management system provider, worldwide. We at
+              Worldwide Quality Assurance (WQA) provide quality services to our
+              clients through internationally recognized accredited
+              certifications for the ideal Quality Standards.{' '}
+            </span>{' '}
+            WQA is your partner in making management system better and effective
+            through its value-added assessments. Our work ethics are built on
+            fundamental respects for customer satisfaction. We have the strength
+            of experienced and calibrated professionals across the countries.
+            Our products are Management System Certification{' '}
             <span className={styles.iso_p}>
               {' '}
               ISO 9001, ISO 14001, OHSAS 18001, ISO 13485, ISO 22000, HACCP, GMP
