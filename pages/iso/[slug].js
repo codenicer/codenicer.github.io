@@ -38,7 +38,6 @@ export default function Iso() {
           <section className={styles.iso_contaner}>
             <h1 className={styles.iso_contaner_title}>{iso.title}</h1>
             {iso.headline.map((content, i) => {
-              console.log(content.headlineList)
               return (
                 <>
                   <h1 key={i} className={styles.iso_headline}>

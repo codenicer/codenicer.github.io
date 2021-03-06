@@ -18,7 +18,6 @@ export const isoServiceList = {
       {
         subheadlineText:
           'ISO 9001 compliance provides an environment which creates a well-defined quality management program within your company. Quality management ensures that processes and services are carried out in a consistent and well-controlled manner. Such consistency instills a high level of confidence in the company’s clients with regard to the products or services provided.',
-        subheadlineList: ['SATISFACTION', 'MANAGEMENT CONTROL', 'COMPLIANCE'],
       },
       {
         subheadlineText:
