@@ -3,6 +3,8 @@ import styles from '../../styles/contact-us.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
 import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
+import GoogleMap from '../../components/google-map'
+
 export default function ContactUs() {
   return (
     <>
@@ -80,7 +82,9 @@ export default function ContactUs() {
             <button>Send Message</button>
           </form>
         </section>
-        <section className={styles.contact_map}></section>
+        <section className={styles.contact_map}>
+          <GoogleMap />
+        </section>
         <Footer />
       </main>
     </>
