@@ -19,10 +19,12 @@ export default function Services() {
 
               <button
                 onClick={() => {
-                  router.push(`/iso/${content.slug}`).then(() => {
-                    router.reload(window.location.pathname)
+                  router.push(`/iso/${content.slug}`)
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth',
                   })
-                  // router.push(`/iso/${content.slug}`)
                 }}
                 className={styles.sevices_read_more}
               >

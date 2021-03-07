@@ -25,11 +25,7 @@ export default function Iso() {
       <header className={styles.nav_container}>
         <MobileNavbar />
       </header>
-      <main
-        id="toptop"
-        className="section_container"
-        style={{ overflowX: 'hidden' }}
-      >
+      <main id="toptop" className="section_container">
         <SectionHeader
           iso={true}
           imgSrc={`/${iso?.imgSrc ? `uploads/${iso.imgSrc}` : 'not-found.jpg'}`}
@@ -80,7 +76,15 @@ export default function Iso() {
             })}
           </section>
         )}
-        <ServicesList />
+        <div
+          style={{
+            overflowX: 'auto',
+            width: '100vw',
+          }}
+        >
+          <ServicesList />
+        </div>
+
         <Footer />
       </main>
     </>

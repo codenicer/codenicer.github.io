@@ -130,6 +130,7 @@ body,
 main,
 #__next {
   @extend %maxwh;
+  scroll-behavior: smooth;
 }
 
 body {

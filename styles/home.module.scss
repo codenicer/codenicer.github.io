@@ -6,7 +6,7 @@
 }
 
 .container {
-  overflow-x: hidden;
+  overflow-x: auto;
   position: relative;
   // overflow-y: hidden;
   width: 100%;
@@ -68,7 +68,6 @@
     line-height: 1.5rem;
   }
   background-color: $bg-color-darkest;
-  // overflow-x: hidden;
   width: 100%;
   height: auto;
   display: grid;
@@ -203,6 +202,16 @@
     &:before,
     &:after {
       content: '';
+    }
+
+    .scrolling-wrapper-flexbox {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      .card {
+        flex: 0 0 auto;
+      }
     }
 
     .iso_container {
