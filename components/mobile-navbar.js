@@ -101,6 +101,7 @@ export default function MobileNavbar({ done = true }) {
             </tspan>
           </text>
         </svg>
+        {/* <img className="logo_svg" src="assets/WQA.jpg" /> */}
       </Link>
       <Link href="/">
         <h5>More that just a Certifacte</h5>

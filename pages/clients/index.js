@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import styles from '../../styles/contact-us.module.scss'
+import styles from '../../styles/clients.module.scss'
 import MobileNavbar from '../../components/mobile-navbar'
 import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
+import Navbar from '../../components/navbar'
+import { clients } from '../../settings/client-list'
 export default function Clients() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function Clients() {
         <title>WQA | About</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
       <main className="section_container">
@@ -24,9 +27,32 @@ export default function Clients() {
             transform: 'scale(.8)',
           }}
           imgSrc={'/assets/clients.svg'}
-          title={'Contact Us'}
-          section={'Contact Us'}
+          title={'Our Clients'}
+          section={'Clients'}
         />
+        <section className={styles.client_section_container}>
+          <div className={styles.clients_list_container}>
+            {clients.map((client, i) => {
+              return (
+                <div key={i} className={styles.client_paper}>
+                  <h1>{client.name}</h1>
+                  <img src={client.imgSrc} />
+                  <div className={styles.client_paper_filler}>
+                    {client.web ? (
+                      <a href={client.web} target="_blank">
+                        Visit Website
+                      </a>
+                    ) : (
+                      <p className={styles.web_no_avail}>
+                        Website Not Available
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </section>
         <Footer />
       </main>
     </>
