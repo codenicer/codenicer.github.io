@@ -63,7 +63,7 @@ export default function Services() {
             Process Improvements.
           </p>
         </section>
-        <div style={{ width: '100vw', overflowX: 'auto' }}>
+        <div style={{ width: 'calc(100vw - 1rem)', overflowX: 'auto' }}>
           <ServicesList />
         </div>
 

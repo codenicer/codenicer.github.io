@@ -15,6 +15,9 @@
   svg {
     margin-left: 1rem;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
+    &:hover {
+      cursor: pointer;
+    }
   }
   // img {
   //   height: 4rem;
@@ -26,6 +29,10 @@
     font-style: italic;
     font-size: 0.7rem;
     text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.521);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .mobile_nav_checkbox {

@@ -90,7 +90,7 @@ export default function Iso() {
         <div
           style={{
             overflowX: 'auto',
-            width: '100vw',
+            width: 'calc(100vw - 1rem)',
           }}
         >
           <ServicesList />

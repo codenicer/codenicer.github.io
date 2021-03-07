@@ -8,6 +8,9 @@ import Navbar from '../components/navbar'
 import { isoServiceList } from '../settings/iso-service-list'
 import Link from 'next/link'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+import Scroller from '../components/scroller'
+
 export default function Home() {
   return (
     <>
@@ -29,36 +32,42 @@ export default function Home() {
         <div className={styles.intro_contaner_margin}>
           <IntroductionSection />
         </div>
-        <div
-          style={{
-            overflowX: 'auto',
-            width: '100vw',
-          }}
-        >
-          <section className={styles.iso_section}>
-            <ul className={styles.iso_list}>
-              {Object.values(isoServiceList).map((content, i) => {
-                return (
-                  <li key={i} className={styles.iso_container}>
-                    <h1 className={styles.iso_title}>{content.title}</h1>
-                    <h2 className={styles.iso_sub_title}>
-                      {content.headline[0].headlineText.slice(0, 100) + '...'}
-                    </h2>
-                    <Link href={`/iso/${content.slug}`}>
-                      <button className={styles.iso_link}>Read More</button>
-                    </Link>
+        <ScrollAnimation animateOnce animateIn="ani-viewport">
+          <div
+            style={{
+              overflowX: 'auto',
+              width: 'calc(100vw - 1rem)',
+            }}
+          >
+            <section className={styles.iso_section}>
+              <ul className={styles.iso_list}>
+                {Object.values(isoServiceList).map((content, i) => {
+                  return (
+                    <li key={i} className={styles.iso_container}>
+                      <h1 className={styles.iso_title}>{content.title}</h1>
+                      <h2 className={styles.iso_sub_title}>
+                        {content.headline[0].headlineText.slice(0, 100) + '...'}
+                      </h2>
+                      <Link href={`/iso/${content.slug}`}>
+                        <button className={styles.iso_link}>Read More</button>
+                      </Link>
 
-                    <img
-                      className={styles.iso_img}
-                      src={`/uploads/${content.imgSrc}`}
-                    ></img>
-                  </li>
-                )
-              })}
-            </ul>
-          </section>
-        </div>
-        <Footer />
+                      <img
+                        className={styles.iso_img}
+                        src={`/uploads/${content.imgSrc}`}
+                      ></img>
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateOnce animateIn="ani-viewport">
+          <Footer />
+        </ScrollAnimation>
+
+        {/* <Scroller /> */}
       </main>
     </>
   )

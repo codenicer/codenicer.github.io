@@ -14,7 +14,7 @@
   flex-direction: column;
   .links_cont {
     position: relative;
-    height: 7rem;
+    height: 5.5rem;
     width: 98%;
     display: flex;
     align-items: center;
@@ -26,12 +26,18 @@
       align-items: center;
 
       .svg_logo_mobile {
-        height: 5rem;
-        width: 5rem;
+        &:hover {
+          cursor: pointer;
+        }
+        height: 4.5rem;
+        width: 4.5rem;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
       }
 
       h5 {
+        &:hover {
+          cursor: pointer;
+        }
         margin-left: 2px;
         color: #001c8e;
         font-style: italic;
@@ -84,8 +90,7 @@
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    top: 7rem;
-
+    top: 5.5rem;
     .main_links_list_cont {
       position: relative;
       background-color: $color-darkest;

@@ -151,7 +151,7 @@ a {
   grid-template-rows: 4rem auto;
 
   @media (min-width: 81rem) {
-    grid-template-rows: 7rem auto;
+    grid-template-rows: 5.5rem auto;
   }
 }
 
@@ -271,6 +271,21 @@ button {
       visibility: visible;
       transform: translateY(0);
       opacity: 1;
+    }
+  }
+}
+
+.ani-viewport {
+  animation: ani-viewport ease 0.5s forwards;
+  @keyframes ani-viewport {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
