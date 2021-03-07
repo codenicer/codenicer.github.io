@@ -205,10 +205,11 @@ button {
   background-color: white !important;
 
   .desktop_nav {
-    background-color: white !important;
-    a {
-      color: $color-darkest !important;
-    }
+    height: 2rem !important;
+    // background-color: white !important;
+    // a {
+    //   color: $color-darkest !important;
+    // }
   }
 
   @keyframes mnav-hide {
@@ -253,6 +254,11 @@ button {
     border-color: white !important;
     background-color: $color-darkest !important;
     color: white !important;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 3px solid white !important;
+    }
   }
 
   @keyframes ani-nav {
