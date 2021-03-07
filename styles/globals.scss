@@ -158,6 +158,8 @@ button {
   border-radius: 0.5rem;
   height: clamp(3rem, 4vw, 4rem);
   width: clamp(10rem, 10vw, 18rem);
+  max-height: 3.2rem;
+  max-width: 10rem;
   font-size: clamp(16px, 4vw, 16px);
 
   &:hover,
@@ -176,4 +178,68 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
+}
+
+.ani-nav-show {
+  animation: ani-nav ease 0.4s forwards;
+  @keyframes ani-nav {
+    0% {
+      visibility: hidden;
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.mnav-hide {
+  animation: mnav-hide ease 0.4s forwards;
+  background-color: white !important;
+  @keyframes mnav-hide {
+    0% {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      visibility: visible;
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+  }
+}
+
+.ani-nav-scroll-down {
+  animation: ani-nav ease 0.7s forwards;
+  box-shadow: 2px 2px 2px 2px #00000063;
+  background-color: $color-darkest !important;
+  h5 {
+    color: white !important;
+  }
+
+  .humberger {
+    background-color: white !important;
+  }
+
+  .logo_svg {
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  @keyframes ani-nav {
+    0% {
+      visibility: visible;
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }

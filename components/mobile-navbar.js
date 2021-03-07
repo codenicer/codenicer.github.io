@@ -48,6 +48,7 @@ export default function MobileNavbar({ done = true }) {
   useEffect(() => {
     if (done) {
       setClasses([`${styles.mobile_nav}`, 'ani-nav'])
+
       if (hide) {
         setCheked(false)
         setClasses([`${styles.mobile_nav}`, 'mnav-hide'])
@@ -60,11 +61,10 @@ export default function MobileNavbar({ done = true }) {
         setClasses([`${styles.mobile_nav}`, 'ani-nav'])
       }
     }
-  }, [hide, done, scrollUp.onTop])
+  }, [hide, scrollUp.onTop])
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-
     return () => window.removeEventListener('scroll', handleScroll)
   }, [scrollUp.lastPos])
 
@@ -72,6 +72,7 @@ export default function MobileNavbar({ done = true }) {
     <nav className={classes.join(' ')}>
       <Link href="/">
         <svg
+          className="logo_svg"
           dataname="Component 10 – 1"
           width="45"
           height="45"
@@ -111,7 +112,7 @@ export default function MobileNavbar({ done = true }) {
         className={styles.mobile_nav_checkbox}
       />
       <div className={styles.mobile_nav_humberger}>
-        <div></div>
+        <div className="humberger"></div>
       </div>
 
       <div className={styles.mobile_nav_link_container}>

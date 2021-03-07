@@ -2,7 +2,6 @@ import styles from '../styles/home.module.scss'
 import { generalSetting } from '../settings/general'
 import CarouselIndicator from './carousel-indicator'
 import Carousel from 're-carousel'
-import { useRouter } from 'next/router'
 
 export default function CarouselSection() {
   return (
@@ -12,13 +11,11 @@ export default function CarouselSection() {
           return (
             <>
               <div
-                key={i}
                 className={styles.carousel_img}
                 style={{
                   backgroundImage: `url('${content.img}')`,
                 }}
               ></div>
-
               <div className={styles.carousel__hero_cont}>
                 <h3 className={styles.hero_cont__sub_headline}>
                   {content.subHeadline}

@@ -6,7 +6,7 @@
 }
 
 .container {
-  overflow-x: auto;
+  // overflow-x: auto;
   position: relative;
   // overflow-y: hidden;
   width: 100%;
@@ -19,9 +19,15 @@
 
 .carousel_container {
   height: 80vw;
-  max-height: 700px;
+  max-height: 43.75rem;
   width: 100%;
   filter: drop-shadow(0 0 10px #0003);
+
+  @media (min-width: 81rem) {
+    & {
+      max-height: 50rem;
+    }
+  }
 }
 
 .carousel_img {
@@ -188,15 +194,47 @@
       grid-area: 5 / 2;
     }
   }
+}
 
-  @media (min-width: 50rem) {
-    .intoduction_who_we_are,
-    .intoduction_services {
-      justify-self: flex-start;
-      margin-left: 4rem;
+@media (min-width: 50rem) {
+  .intoduction_who_we_are,
+  .intoduction_services {
+    justify-self: flex-start;
+    margin-left: 4rem;
+  }
+  .intoduction_what_we_do {
+    justify-self: flex-end;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 81rem) {
+  .introduction_cont {
+    max-width: 100%;
+    max-width: 1430px;
+    grid-template-rows: 4rem 40px auto 40px auto 4rem;
+    grid-row-gap: 10rem;
+    .intoduction_who_we_are {
+      max-height: 400px;
+      justify-self: center;
+      margin-left: 0;
+      grid-area: 2 / 5 / span 2 / span 4;
     }
+
     .intoduction_what_we_do {
+      // align-self: flex-start;
+      max-height: 400px;
+      justify-self: flex-start;
+      margin-right: 0;
+      margin-left: 4rem;
+      grid-area: 3/ 1 / span 2 / span 4;
+    }
+
+    .intoduction_services {
+      max-height: 400px;
       justify-self: flex-end;
+      margin-left: 0;
+      grid-area: 3/ 9 / span 2 / span 4;
       margin-right: 4rem;
     }
   }
@@ -348,7 +386,37 @@
     align-self: center;
     font-weight: 300;
     grid-column: 3 / span 1;
-    grid-column: 3 / span 1;
     grid-row: 9 / span 1;
+  }
+
+  @media (min-width: 50rem) {
+    & {
+      grid-template-columns: 10px 10px 1fr 10px 1fr 10px 10px;
+
+      .footer_title {
+        &:nth-of-type(3) {
+          grid-area: 1 / 4;
+        }
+
+        &:nth-of-type(4) {
+          grid-area: 3 / 4;
+        }
+      }
+
+      .footer_title__links {
+        &:nth-of-type(3) {
+          grid-area: 2 / 5;
+        }
+
+        &:nth-of-type(4) {
+          grid-area: 4 / 5;
+        }
+      }
+
+      .copy_rights {
+        justify-self: center;
+        grid-area: 5 / 3 / span 1 / span 3;
+      }
+    }
   }
 }
