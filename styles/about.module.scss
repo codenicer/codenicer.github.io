@@ -11,7 +11,7 @@
   .profile_title {
     color: $color-darkest;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 2.2rem);
   }
 
   .info {
@@ -21,7 +21,7 @@
 
     .info_highlighted {
       font-weight: 400;
-      font-size: 1.1rem;
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
     }
   }
 }

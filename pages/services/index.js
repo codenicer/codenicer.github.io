@@ -41,6 +41,9 @@ export default function Services() {
             through its value-added assessments. Our work ethics are built on
             fundamental respects for customer satisfaction. We have the strength
             of experienced and calibrated professionals across the countries.
+          </p>
+
+          <p className={styles.information}>
             Our products are Management System Certification{' '}
             <span className={styles.iso_p}>
               {' '}

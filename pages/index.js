@@ -24,7 +24,10 @@ export default function Home() {
       </header>
       <main className={styles.container}>
         <CarouselSection />
-        <IntroductionSection />
+        <div className={styles.intro_contaner_margin}>
+          <IntroductionSection />
+        </div>
+
         <section className={styles.iso_section}>
           <ul className={styles.iso_list}>
             {Object.values(isoServiceList).map((content, i) => {

@@ -18,7 +18,8 @@
 }
 
 .carousel_container {
-  height: 60vh;
+  height: 80vw;
+  max-height: 700px;
   width: 100%;
   filter: drop-shadow(0 0 10px #0003);
 }
@@ -63,13 +64,19 @@
   left: 10vw;
   z-index: 101;
 }
+.intro_contaner_margin {
+  background-color: $bg-color-darkest;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .introduction_cont {
+  position: relative;
   p {
     line-height: 1.5rem;
   }
-  background-color: $bg-color-darkest;
-  width: 100%;
+  max-width: 56.25rem;
   height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -77,24 +84,35 @@
   justify-items: center;
   grid-row-gap: 2.5rem;
 
-  .intoduction_who_we_are {
-    background-color: white;
-    grid-area: 2 / 1 / span 1 / -1;
+  .intoduction_who_we_are,
+  .intoduction_what_we_do,
+  .intoduction_services {
     width: 80%;
     height: auto;
     display: grid;
+
     grid-row-gap: 1rem;
+    border-radius: 0.5rem;
+    max-width: 25rem;
+    max-height: 370px;
+  }
+
+  .intoduction_who_we_are {
+    background-color: white;
+    grid-area: 2 / 1 / span 1 / -1;
+
     grid-template-rows: 2rem repeat(3, auto) 1fr 2rem;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 20px 8fr 20px;
     border-radius: 0.5rem;
     color: $color-darkest;
     .who_we_are__heading {
       align-self: center;
-      font-size: 2rem;
+      font-size: clamp(2rem, 4vw, 2.2rem);
       font-weight: 700;
       grid-area: 2 / 2;
     }
     .who_we_are__information {
+      font-size: clamp(1rem, 3vw, 1.2rem);
       font-weight: 300;
       grid-area: 3 / 2;
     }
@@ -106,15 +124,10 @@
   }
 
   .intoduction_what_we_do {
-    height: auto;
-    width: 80%;
     grid-area: 3 / 1 / span 1 / -1;
-    display: grid;
-    border-radius: 0.5rem;
     background-color: #017d9b;
-    grid-row-gap: 1rem;
     grid-template-rows: 2rem repeat(4, auto) 2rem;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 20px 8fr 20px;
 
     .who_we_do__icon {
       align-self: center;
@@ -124,12 +137,14 @@
     .who_we_do__heading {
       color: white;
       align-self: center;
-      font-size: 2rem;
+
+      font-size: clamp(2rem, 4vw, 2.2rem);
       font-weight: 700;
       grid-area: 3 / 2;
     }
 
     .who_we_do__information {
+      font-size: clamp(1rem, 3vw, 1.2rem);
       font-weight: 300;
       color: white;
       grid-area: 4 / 2;
@@ -142,14 +157,10 @@
   }
 
   .intoduction_services {
-    height: auto;
-    width: 80%;
     grid-area: 4 / 1 / span 1 / -1;
     display: grid;
-    border-radius: 0.5rem;
-    grid-row-gap: 1rem;
     grid-template-rows: 2rem repeat(4, auto) 2rem;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 20px 8fr 20px;
 
     background-color: #00c9d1;
     .services__icon {
@@ -158,6 +169,7 @@
       grid-area: 2 / 2;
     }
     .services__heading {
+      font-size: clamp(2rem, 4vw, 2.2rem);
       color: #393939;
       align-self: center;
       font-size: 2rem;
@@ -166,14 +178,26 @@
     }
 
     .services__information {
+      font-size: clamp(1rem, 3vw, 1.2rem);
       color: #393939;
       font-weight: 300;
       grid-area: 4 / 2;
-      width: 80%;
     }
     button {
       justify-self: center;
       grid-area: 5 / 2;
+    }
+  }
+
+  @media (min-width: 50rem) {
+    .intoduction_who_we_are,
+    .intoduction_services {
+      justify-self: flex-start;
+      margin-left: 4rem;
+    }
+    .intoduction_what_we_do {
+      justify-self: flex-end;
+      margin-right: 4rem;
     }
   }
 }
