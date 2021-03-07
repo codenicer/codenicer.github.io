@@ -4,6 +4,7 @@ import MobileNavbar from '../../components/mobile-navbar'
 import Footer from '../../components/footer'
 import TrainWithUs from '../../components/train-with-us'
 import SectionHeader from '../../components/section-header'
+import Navbar from '../../components/navbar'
 export default function About() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function About() {
         <title>WQA | About</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
       <main className="section_container">

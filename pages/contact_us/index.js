@@ -4,6 +4,7 @@ import MobileNavbar from '../../components/mobile-navbar'
 import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
 import GoogleMap from '../../components/google-map'
+import Navbar from '../../components/navbar'
 
 export default function ContactUs() {
   return (
@@ -18,6 +19,7 @@ export default function ContactUs() {
         <title>WQA | About</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
       <main className="section_container">

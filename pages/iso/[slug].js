@@ -5,6 +5,7 @@ import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
 import { useRouter } from 'next/router'
 import ServicesList from '../../components/services-list'
+import Navbar from '../../components/navbar'
 
 import { isoServiceList } from '../../settings/iso-service-list'
 export default function Iso() {
@@ -23,6 +24,7 @@ export default function Iso() {
         <title>WQA | {iso?.title ? iso.title : 'Not Found'}</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
       <main id="toptop" className="section_container">
@@ -35,46 +37,55 @@ export default function Iso() {
         {!iso ? (
           <></>
         ) : (
-          <section className={styles.iso_contaner}>
-            <h1 className={styles.iso_contaner_title}>{iso.title}</h1>
-            {iso.headline.map((content, i) => {
-              return (
-                <>
-                  <h1 key={i} className={styles.iso_headline}>
-                    {content.headlineText}
-                  </h1>
-                  {!content.headlineList ? (
-                    <></>
-                  ) : (
-                    <ul className={styles.iso_headline_list}>
-                      {content.headlineList.map((text, i) => {
-                        return <li key={i}> {text}</li>
-                      })}
-                    </ul>
-                  )}
-                </>
-              )
-            })}
+          <div
+            style={{
+              width: '100%',
+              backgroundColor: '#f2f2f2',
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <section className={styles.iso_contaner}>
+              <h1 className={styles.iso_contaner_title}>{iso.title}</h1>
+              {iso.headline.map((content, i) => {
+                return (
+                  <>
+                    <h1 key={i} className={styles.iso_headline}>
+                      {content.headlineText}
+                    </h1>
+                    {!content.headlineList ? (
+                      <></>
+                    ) : (
+                      <ul className={styles.iso_headline_list}>
+                        {content.headlineList.map((text, i) => {
+                          return <li key={i}> {text}</li>
+                        })}
+                      </ul>
+                    )}
+                  </>
+                )
+              })}
 
-            {iso.subHeadline.map((content, i) => {
-              return (
-                <>
-                  <h1 key={i} className={styles.iso_sub_headline}>
-                    {content.subheadlineText}
-                  </h1>
-                  {!content.subheadlineList ? (
-                    <></>
-                  ) : (
-                    <ul className={styles.iso_sub_headline_list}>
-                      {content.subheadlineList.map((text, i) => {
-                        return <li key={i}> {text}</li>
-                      })}
-                    </ul>
-                  )}
-                </>
-              )
-            })}
-          </section>
+              {iso.subHeadline.map((content, i) => {
+                return (
+                  <>
+                    <h1 key={i} className={styles.iso_sub_headline}>
+                      {content.subheadlineText}
+                    </h1>
+                    {!content.subheadlineList ? (
+                      <></>
+                    ) : (
+                      <ul className={styles.iso_sub_headline_list}>
+                        {content.subheadlineList.map((text, i) => {
+                          return <li key={i}> {text}</li>
+                        })}
+                      </ul>
+                    )}
+                  </>
+                )
+              })}
+            </section>
+          </div>
         )}
         <div
           style={{

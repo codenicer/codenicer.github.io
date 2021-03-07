@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import GoogleMapReact from 'google-map-react'
-
+import styles from '../styles/contact-us.module.scss'
 const AnyReactComponent = ({ text }) => (
   <div
     style={{
@@ -22,7 +22,7 @@ class SimpleMap extends Component {
 
   render() {
     return (
-      <div style={{ height: '20rem', width: '100%' }}>
+      <div className={styles.google_map}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.GMAP_API_KEY }}
           defaultCenter={this.props.center}

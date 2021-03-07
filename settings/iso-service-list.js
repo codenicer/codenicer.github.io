@@ -140,7 +140,13 @@ export const isoServiceList = {
       {
         headlineText:
           'Benefits of achieving certification to ISO 22000 include:',
-        headlineList: [
+        headlineList: null,
+      },
+    ],
+    subHeadline: [
+      {
+        subheadlineText: '',
+        subheadlineList: [
           'Customer satisfaction – through delivery of products that consistently meet customer requirements including quality, safety and legality',
           'Reduced operating costs – through continual improvement of processes and resulting operational efficiencies',
           'Operational efficiencies – by integrating pre-requisite programs (PRP’s & OPRP’s), HACCP with the Plan-Do-Check-Act philosophies of ISO 9001 to increase the effectiveness of the Food Safety Management System',
@@ -152,7 +158,6 @@ export const isoServiceList = {
         ],
       },
     ],
-    subHeadline: [],
     slug: 'iso-22000',
     metaDecs: '',
     metaKeywords: '',

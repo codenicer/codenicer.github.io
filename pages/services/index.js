@@ -4,6 +4,7 @@ import MobileNavbar from '../../components/mobile-navbar'
 import SectionHeader from '../../components/section-header'
 import Footer from '../../components/footer'
 import ServicesList from '../../components/services-list'
+import Navbar from '../../components/navbar'
 export default function Services() {
   return (
     <>
@@ -17,9 +18,10 @@ export default function Services() {
         <title>WQA | Services</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
-      <main className="section_container" style={{ overflowX: 'hidden' }}>
+      <main className="section_container">
         <SectionHeader
           customImageStyle={{
             transform: 'scale(.8)',
@@ -61,7 +63,10 @@ export default function Services() {
             Process Improvements.
           </p>
         </section>
-        <ServicesList />
+        <div style={{ width: '100vw', overflowX: 'auto' }}>
+          <ServicesList />
+        </div>
+
         <Footer />
       </main>
     </>

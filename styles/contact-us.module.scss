@@ -92,6 +92,19 @@
 
 .contact_map {
   max-width: 50rem;
-  width: 95%;
-  height: 24rem;
+  width: 90%;
+  height: 25rem;
+}
+.google_map {
+  height: 20rem;
+  width: 100%;
+}
+
+@media (min-width: 50rem) {
+  .contact_map {
+    height: 40rem;
+  }
+  .google_map {
+    height: 35rem;
+  }
 }

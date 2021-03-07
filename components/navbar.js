@@ -163,10 +163,10 @@ export default function Navbar({ done = true }) {
               <Link href="/services">Services</Link>
             </li>
             <li className={styles.nav_link}>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact_us">Contact</Link>
             </li>
             <li className={styles.nav_link}>
-              <Link href="/contact">Clients</Link>
+              <Link href="/clients">Clients</Link>
             </li>
           </ul>
         </div>

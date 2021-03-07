@@ -10,6 +10,7 @@
   position: relative;
   .header_img {
     width: 80%;
+    max-width: 45rem;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.568));
   }
 
@@ -34,9 +35,12 @@
   z-index: 1;
   height: 100%;
   width: 100%;
+  max-width: 57.875rem;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.568)) blur(1px);
 }
 
 .header_iso {
   min-height: 22rem;
+  height: 100vw;
+  max-height: 57.875rem;
 }
