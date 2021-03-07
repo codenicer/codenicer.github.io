@@ -55,12 +55,13 @@
     font-size: clamp(2.2rem, 5vw, 8rem);
     grid-area: 3 / 2 / span 1 / span 8;
   }
+}
 
-  .hero_cont__headline_cta {
-    grid-area: 4 / 2 / span 1 / span 3;
-    align-self: center;
-    z-index: 2;
-  }
+.hero_cont__headline_cta {
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  z-index: 101;
 }
 
 .introduction_cont {
