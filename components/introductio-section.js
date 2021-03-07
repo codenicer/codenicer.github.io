@@ -5,6 +5,11 @@ export default function IntrouctionSection() {
   return (
     <section className={styles.introduction_cont}>
       <div className={styles.intoduction_who_we_are}>
+        <img
+          className={styles.who_we_are__icon}
+          src="/assets/who_we_are.svg"
+          alt="what we do"
+        />
         <h1 className={styles.who_we_are__heading}>Who We Are</h1>
         <p className={styles.who_we_are__information}>
           Dolore quis sit ad ex eu veniam culpa occaecat cupidatat exercitation

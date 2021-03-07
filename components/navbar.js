@@ -105,7 +105,7 @@ export default function Navbar({ done = true }) {
             </svg>
           </Link>
           <Link href="/">
-            <h5>More that just a Certifacte</h5>
+            <h5>More than just a Certifacte</h5>
           </Link>
         </div>
         <div className={styles.nav_cta_cont}>

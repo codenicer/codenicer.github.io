@@ -135,5 +135,8 @@
 
   @media (min-width: 81rem) {
     display: flex;
+    .links_cont {
+      max-width: 110rem;
+    }
   }
 }

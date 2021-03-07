@@ -25,7 +25,7 @@
 
   @media (min-width: 81rem) {
     & {
-      max-height: 50rem;
+      max-height: 52rem;
     }
   }
 }
@@ -107,25 +107,31 @@
     background-color: white;
     grid-area: 2 / 1 / span 1 / -1;
 
-    grid-template-rows: 2rem repeat(3, auto) 1fr 2rem;
+    grid-template-rows: 2rem repeat(4, auto) 2rem;
     grid-template-columns: 20px 8fr 20px;
     border-radius: 0.5rem;
     color: $color-darkest;
+    .who_we_are__icon {
+      height: 3rem;
+      align-self: center;
+      justify-self: center;
+      grid-area: 2 / 2;
+    }
     .who_we_are__heading {
       align-self: center;
       font-size: clamp(2rem, 4vw, 2.2rem);
       font-weight: 700;
-      grid-area: 2 / 2;
+      grid-area: 3 / 2;
     }
     .who_we_are__information {
       font-size: clamp(1rem, 3vw, 1.2rem);
       font-weight: 300;
-      grid-area: 3 / 2;
+      grid-area: 4 / 2;
     }
     .who_we_are__cta {
       align-self: flex-end;
       justify-self: center;
-      grid-area: 4 / 2;
+      grid-area: 5 / 2;
     }
   }
 
@@ -254,7 +260,7 @@
     display: grid;
     grid-gap: 2.2rem;
     height: auto;
-    grid-template-columns: 10px repeat(5, 20rem) 10px;
+    grid-template-columns: 10px repeat(8, 20rem) 10px;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     margin: 5rem 0;

@@ -130,7 +130,14 @@ export default function About() {
             </span>
           </p>
         </section>
-        <TrainWithUs />
+        <div
+          style={{
+            maxWidth: '100rem',
+          }}
+        >
+          <TrainWithUs />
+        </div>
+
         <Footer />
       </main>
     </>

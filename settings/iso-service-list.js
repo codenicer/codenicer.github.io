@@ -163,4 +163,70 @@ export const isoServiceList = {
     metaKeywords: '',
     metaRobot: '',
   },
+  ['iso-sample1']: {
+    title: 'ISO sample1',
+    imgSrc: 'iso-22301.jpg',
+    headline: [
+      {
+        headlineText:
+          '2012 specifies requirements to plan, establish, implement, operate, monitor, review, maintain and continually improve a documented management system to protect against, reduce the likelihood of occurrence, prepare for, respond to, and recover from disruptive incidents when they arise.',
+        headlineList: null,
+      },
+    ],
+    subHeadline: [
+      {
+        subheadlineText:
+          'The requirements specified in ISO 22301:2012 are generic and intended to be applicable to all organizations, or parts thereof, regardless of type, size and nature of the organization. The extent of application of these requirements depends on the organization’s operating environment and complexity.          ',
+        subheadlineList: null,
+      },
+    ],
+    slug: 'iso-sample1',
+    metaDecs: '',
+    metaKeywords: '',
+    metaRobot: '',
+  },
+  ['iso-sample2']: {
+    title: 'ISO sample2',
+    imgSrc: 'iso-22301.jpg',
+    headline: [
+      {
+        headlineText:
+          '2012 specifies requirements to plan, establish, implement, operate, monitor, review, maintain and continually improve a documented management system to protect against, reduce the likelihood of occurrence, prepare for, respond to, and recover from disruptive incidents when they arise.',
+        headlineList: null,
+      },
+    ],
+    subHeadline: [
+      {
+        subheadlineText:
+          'The requirements specified in ISO 22301:2012 are generic and intended to be applicable to all organizations, or parts thereof, regardless of type, size and nature of the organization. The extent of application of these requirements depends on the organization’s operating environment and complexity.          ',
+        subheadlineList: null,
+      },
+    ],
+    slug: 'iso-sample2',
+    metaDecs: '',
+    metaKeywords: '',
+    metaRobot: '',
+  },
+  ['iso-sample3']: {
+    title: 'ISO sample3',
+    imgSrc: 'iso-22301.jpg',
+    headline: [
+      {
+        headlineText:
+          '2012 specifies requirements to plan, establish, implement, operate, monitor, review, maintain and continually improve a documented management system to protect against, reduce the likelihood of occurrence, prepare for, respond to, and recover from disruptive incidents when they arise.',
+        headlineList: null,
+      },
+    ],
+    subHeadline: [
+      {
+        subheadlineText:
+          'The requirements specified in ISO 22301:2012 are generic and intended to be applicable to all organizations, or parts thereof, regardless of type, size and nature of the organization. The extent of application of these requirements depends on the organization’s operating environment and complexity.          ',
+        subheadlineList: null,
+      },
+    ],
+    slug: 'iso-sample3',
+    metaDecs: '',
+    metaKeywords: '',
+    metaRobot: '',
+  },
 }
