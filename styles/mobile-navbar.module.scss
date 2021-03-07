@@ -10,13 +10,15 @@
   height: 4rem;
   width: 100%;
   box-shadow: 1px 2px 1px rgba(128, 128, 128, 0.459);
+  transition: all 0.5s ease;
 
   svg {
     margin-left: 1rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
   }
   h5 {
     margin-left: 2px;
-    color: #3c58cb;
+    color: #001c8e;
     font-style: italic;
     font-size: 0.7rem;
     text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.521);
@@ -173,7 +175,9 @@
 }
 
 @media (min-width: 81rem) {
-  // mobile_nav:
+  .mobile_nav {
+    display: none;
+  }
 }
 
 @keyframes mobile_nav_hide {

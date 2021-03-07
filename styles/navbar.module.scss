@@ -1,0 +1,124 @@
+@import '_variables.scss';
+
+.container {
+  transition: all 0.4s ease;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  // border: 1px solid red;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .links_cont {
+    position: relative;
+    height: 7rem;
+    width: 98%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    .nav_log_cont {
+      display: flex;
+      align-items: center;
+
+      .svg_logo_mobile {
+        height: 5rem;
+        width: 5rem;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
+      }
+
+      h5 {
+        margin-left: 2px;
+        color: #001c8e;
+        font-style: italic;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
+      }
+    }
+
+    .nav_cta_cont {
+      display: flex;
+      align-items: center;
+
+      .nav_cta_mobile_number_group,
+      .nav_cta_email_group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+      }
+
+      .nav_cta_mobile_number,
+      .nav_cta_email {
+        margin-left: 0.5rem;
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+
+      .nav_cta {
+        background-color: white;
+        border: 3.5px solid $color-darkest;
+        color: $color-darkest;
+        font-weight: 700;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: white !important;
+          border: none i !important;
+          background-color: $color-darkest !important;
+        }
+      }
+    }
+  }
+
+  .main_links_cont {
+    position: absolute;
+    // border: 1px solid red;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    top: 7rem;
+
+    .main_links_list_cont {
+      position: relative;
+      background-color: $color-darkest;
+      height: 100%;
+      width: 45%;
+
+      .main_links_filler_cont {
+        position: absolute;
+        left: -6rem;
+        top: -2.5rem;
+        background-color: $color-darkest;
+        height: 110%;
+        width: 6rem;
+        transform: skewY(40deg);
+      }
+      .nav_links {
+        display: flex;
+        margin-right: 2rem;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        li {
+          font-size: 1.6rem;
+          margin: 0 0.5rem;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 81rem) {
+    display: flex;
+  }
+}

@@ -4,6 +4,7 @@ import MobileNavbar from '../components/mobile-navbar'
 import CarouselSection from '../components/carousel-section'
 import IntroductionSection from '../components/introductio-section'
 import Footer from '../components/footer'
+import Navbar from '../components/navbar'
 import { isoServiceList } from '../settings/iso-service-list'
 import Link from 'next/link'
 
@@ -20,6 +21,7 @@ export default function Home() {
         <title>WQA</title>
       </Head>
       <header className={styles.nav_container}>
+        <Navbar />
         <MobileNavbar />
       </header>
       <main className={styles.container}>

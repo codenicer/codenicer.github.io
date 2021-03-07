@@ -149,6 +149,10 @@ a {
   background-color: #f2f2f2;
   display: grid;
   grid-template-rows: 4rem auto;
+
+  @media (min-width: 81rem) {
+    grid-template-rows: 7rem auto;
+  }
 }
 
 button {
@@ -199,6 +203,14 @@ button {
 .mnav-hide {
   animation: mnav-hide ease 0.4s forwards;
   background-color: white !important;
+
+  .desktop_nav {
+    background-color: white !important;
+    a {
+      color: $color-darkest !important;
+    }
+  }
+
   @keyframes mnav-hide {
     0% {
       visibility: visible;
@@ -228,6 +240,19 @@ button {
   .logo_svg {
     border: 1px solid white;
     border-radius: 50%;
+  }
+
+  .desktop_nav {
+    background-color: white !important;
+    a {
+      color: $color-darkest !important;
+    }
+  }
+
+  .desktop_nav_cta {
+    border-color: white !important;
+    background-color: $color-darkest !important;
+    color: white !important;
   }
 
   @keyframes ani-nav {
