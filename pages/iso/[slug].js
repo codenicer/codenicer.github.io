@@ -91,6 +91,9 @@ export default function Iso() {
           style={{
             overflowX: 'auto',
             width: 'calc(100vw - 1rem)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           <ServicesList />

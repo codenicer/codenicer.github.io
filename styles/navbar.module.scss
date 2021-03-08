@@ -1,6 +1,7 @@
 @import '_variables.scss';
 
 .container {
+  max-width: 85.375rem;
   transition: all 0.4s ease;
   display: none;
   position: fixed;
@@ -8,6 +9,7 @@
   background-color: white;
   width: 100%;
   height: auto;
+  top: 0;
   // border: 1px solid red;
   // justify-content: center;
   align-items: center;

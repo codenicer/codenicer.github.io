@@ -51,12 +51,17 @@
 
 .contact_form_container {
   // max-width: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 4rem 0;
   .contact_form {
     background: white;
     display: flex;
-    width: 90vw;
-    max-width: 800px;
+    width: 80%;
+    padding: 4rem;
+    // max-width: 800px;
     flex-direction: column;
 
     .contact_form_title {
@@ -68,7 +73,7 @@
     }
 
     .form_group {
-      width: 100%;
+      width: 80%;
       align-self: center;
       display: flex;
       flex-direction: column;
@@ -97,6 +102,11 @@
         font-size: 1.1rem;
         font-family: 'Poppins', sans-serif;
       }
+    }
+    button {
+      min-width: 150px;
+      justify-self: center;
+      align-self: center;
     }
   }
 }

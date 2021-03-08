@@ -1,11 +1,13 @@
 @import '_variables.scss';
 
 .nav_container {
+  max-width: 85.375;
   height: 4rem;
   width: 100%;
 }
 
 .container {
+  max-width: 85.375rem;
   // overflow-x: auto;
   position: relative;
   // overflow-y: hidden;
@@ -247,6 +249,7 @@
 }
 
 .iso_section {
+  max-width: 85.375rem;
   width: 100%;
   height: auto;
   display: flex;

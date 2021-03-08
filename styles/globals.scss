@@ -131,6 +131,15 @@ main,
 #__next {
   @extend %maxwh;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/background-img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
@@ -177,6 +186,7 @@ button {
 }
 
 .section_container {
+  max-width: 85.375rem;
   display: flex;
   align-items: center;
   flex-direction: column;
