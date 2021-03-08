@@ -103,6 +103,7 @@ export default function Navbar({ done = true }) {
                 </tspan>
               </text>
             </svg>
+            {/* <img src="/wew.png" style={{ height: '6rem', width: '9rem' }} /> */}
           </Link>
           <Link href="/">
             <h5>More than just a Certifacte</h5>

@@ -14,7 +14,7 @@
   flex-direction: column;
   .links_cont {
     position: relative;
-    height: 5.5rem;
+    height: 5rem;
     width: 98%;
     display: flex;
     align-items: center;
@@ -29,8 +29,8 @@
         &:hover {
           cursor: pointer;
         }
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 4rem;
+        width: 4rem;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
       }
 
@@ -41,7 +41,7 @@
         margin-left: 2px;
         color: #001c8e;
         font-style: italic;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
       }
     }
@@ -62,7 +62,7 @@
       .nav_cta_email {
         margin-left: 0.5rem;
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       .nav_cta {
@@ -85,12 +85,12 @@
   .main_links_cont {
     position: absolute;
     // border: 1px solid red;
-    height: 3.5rem;
+    height: 2.5rem;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-    top: 5.5rem;
+    top: 5rem;
     .main_links_list_cont {
       position: relative;
       background-color: $color-darkest;
@@ -114,7 +114,7 @@
         align-items: center;
         li {
           transition: all 0.2s ease;
-          font-size: 1.6rem;
+          font-size: 1.1rem;
           margin: 0 0.5rem;
           display: flex;
           justify-content: center;

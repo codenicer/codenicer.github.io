@@ -8,7 +8,7 @@
   padding: 2rem 0;
   .services_title {
     color: black;
-    font-size: clamp(2rem, 4vw, 2.2rem);
+    font-size: clamp(2rem, 4vw, 2.1rem);
     font-weight: 700;
     margin: 2rem 0;
   }
@@ -17,7 +17,7 @@
     justify-self: center;
     width: 90%;
     color: $color-darkest;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
 
     font-weight: 300;
     line-height: 1.9rem;
@@ -35,7 +35,7 @@
 
   .service_list_header {
     font-weight: 300;
-    font-size: clamp(2rem, 4vw, 2.2rem);
+    font-size: clamp(2rem, 4vw, 2.1rem);
     margin-left: 20px;
     margin-bottom: 2rem;
   }
@@ -63,13 +63,13 @@
         font-family: 'Exo', sans-serif;
         color: white;
         justify-self: center;
-        font-size: clamp(2rem, 4vw, 2.2rem);
+        font-size: clamp(2rem, 4vw, 2.1rem);
 
         font-weight: 700;
         grid-area: 2 / 2;
       }
       .sevices_info {
-        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-size: clamp(1rem, 2vw, 1.1rem);
 
         color: white;
         font-weight: 300;

@@ -22,7 +22,8 @@
       align-items: center;
 
       p {
-        font-size: clamp(1.2rem, 3vw, 1.4rem);
+        // font-size: clamp(1.2rem, 3vw, 1.4rem);
+        font-size: 1rem;
 
         color: $color-darkest;
         font-weight: 300;
@@ -36,6 +37,13 @@
       img {
         margin: 1rem 0;
         height: 6rem;
+      }
+    }
+
+    @media (min-width: 80rem) {
+      width: 80%;
+      & {
+        flex-direction: row;
       }
     }
   }
@@ -53,7 +61,8 @@
 
     .contact_form_title {
       width: 100%;
-      font-size: clamp(2.5rem, 5vw, 2.7rem);
+      // font-size: clamp(2.5rem, 5vw, 2.7rem);
+      font-size: 2rem;
       font-weight: 200;
       margin-bottom: 2rem;
     }
@@ -65,8 +74,8 @@
       flex-direction: column;
 
       label {
-        font-size: clamp(1rem, 2vw, 1.2rem);
-
+        // font-size: clamp(1rem, 2vw, 1.2rem);
+        font-size: 1rem;
         margin-bottom: 0.5rem;
         color: $color-darkest;
       }
@@ -78,12 +87,14 @@
         margin-bottom: 1rem;
         height: 1rem;
         padding: 1rem;
-        font-size: clamp(1.2rem, 3vw, 1.4rem);
+        // font-size: clamp(1.2rem, 3vw, 1.4rem);
+        font-size: 1rem;
       }
 
       textarea {
         height: 4rem;
-        font-size: clamp(1.3rem, 4vw, 1.5rem);
+        // font-size: clamp(1.3rem, 4vw, 1.5rem);
+        font-size: 1.1rem;
         font-family: 'Poppins', sans-serif;
       }
     }
@@ -101,6 +112,9 @@
 }
 
 @media (min-width: 50rem) {
+  .contact_us_info_list {
+    flex-direction: row;
+  }
   .contact_map {
     height: 40rem;
   }

@@ -1,8 +1,8 @@
 import styles from '../styles/home.module.scss'
 import TrainWithUs from '../components/train-with-us'
 import Link from 'next/link'
-
 import ScrollAnimation from 'react-animate-on-scroll'
+
 export default function IntrouctionSection() {
   return (
     <ScrollAnimation animateOnce animateIn="ani-viewport">
