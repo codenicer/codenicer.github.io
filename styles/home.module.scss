@@ -18,7 +18,7 @@
 }
 
 .carousel_container {
-  height: 80vw;
+  height: 45rem;
   max-height: 43.75rem;
   width: 100%;
   filter: drop-shadow(0 0 10px #0003);
@@ -86,9 +86,9 @@
   height: auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1rem repeat(4, auto) 1rem;
+  grid-template-rows: 1rem 1px repeat(3, auto) 1rem;
   justify-items: center;
-  grid-row-gap: 2.5rem;
+  grid-row-gap: 2.2rem;
 
   .intoduction_who_we_are,
   .intoduction_what_we_do,
